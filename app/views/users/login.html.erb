@@ -1,0 +1,17 @@
+<br>
+    <div class="row">
+      <div class="col-md-4 col-md-offset-4" style="height: 300px;">
+				<%= form_tag  "/create_login_session" do %> 
+
+					<%= label_tag "email" %>
+          <%= text_field_tag :email,params[:email] %>
+
+          <%= label_tag "password" %>
+          <%= password_field_tag :password, params[:password] %>
+
+          <%= submit_tag "login", class: "btn btn-primary" %>
+		
+        <p>New user? <%= link_to "Sign up now!", signup_path %></p>
+       <% end %>
+      </div>
+</div>

@@ -1,0 +1,9 @@
+<%= form_for root_path, method: :get, html: { role: "search", class: 'width:10px;' do %>
+  <div class="nav navbar-nav">
+  	<div class="search">
+     <%= text_field_tag :search, params[:search], class: "form-control" %>
+      <%= submit_tag "Search", class: "btn btn-default" %>
+  
+<% end %>
+</div>
+</div>
